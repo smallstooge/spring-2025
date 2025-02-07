@@ -1,0 +1,20 @@
+/*Colors*/
+
+/*
+60% of #6a58f - Primary
+30% of #0d4647 - secondary
+10%of #c3004c - accent 
+*/
+
+:root {
+
+
+    /* var(--primaryColor) !important; */
+    --primarycolor: #6a58f0; 
+      
+      /* var(--SECONDARYColor) !important; */
+      --primarycolor: #0d4647; 
+
+        /* var(--accentColor) !important; */
+    --primarycolor: #c3004c; 
+}
