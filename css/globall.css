@@ -10,11 +10,11 @@
 
 
     /* var(--primaryColor) !important; */
-    --primarycolor: #6a58f0; 
+    --primaryColor: #6a58f0; 
       
-      /* var(--SECONDARYColor) !important; */
-      --primarycolor: #0d4647; 
+      /* var(--secondaryColor) !important; */
+      --secondaryColor: #0d4647; 
 
         /* var(--accentColor) !important; */
-    --primarycolor: #c3004c; 
+    --accentColor: #c3004c; 
 }
