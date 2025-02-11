@@ -2,6 +2,5 @@
 @import 'main.css';
 
 .col {
-
-    border: 1px solid black;
+    border: 1px solid black !important;
 }
