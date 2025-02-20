@@ -1,15 +1,16 @@
-@import 'globall.css';
+@import 'global.css';
 @import 'main.css';
 
 body {
-   font-family: var(--fontFamily) !important;
+    font-family: var(--fontFamily) !important;
 }
 
-.blinn-fa-icon{
-   font-size: 80px; 
-   color: red;
+.blinn-fa-icon {
+    font-size: 60px;
+    color: red;
 }
 
-.blinn-fa-container{
-      background-color: #6a58f0 ;
+.blinn-fa-container {
+    background-color: #6a58f0;
+    padding: 50px;
 }
