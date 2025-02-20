@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+
+
+
+
 /*Colors*/
 
 /*
@@ -17,6 +23,11 @@
 
         /* var(--accentColor) !important; */
     --accentColor: #c3004c; 
+
+
+
+        /* var(--fontFamily) !important; */
+        --fontFamily: "Quintessential", serif; 
 }
 
 
