@@ -1,0 +1,75 @@
+col {
+    border: 1px solid black !important;
+}
+
+
+.col:nth-last-of-type(2) {
+
+   background-color: blueviolet;
+
+}
+
+.col:nth-last-of-type(3) {
+
+    background-color: rgb(83, 90, 80);
+ 
+ }
+
+
+ .col:nth-last-of-type(4) {
+
+    background-color: rgb(72, 61, 82);
+ 
+ }
+
+ .col:nth-last-of-type(5) {
+
+    background-color: rgb(63, 42, 12);
+ 
+ }
+
+ .col:nth-last-of-type(6) {
+
+    background-color: rgb(56, 75, 12);
+ 
+ }
+
+ .col:nth-last-of-type(7) {
+
+    background-color: rgb(163, 133, 192);
+ 
+ }
+
+ .col:nth-last-of-type(8) {
+
+    background-color: rgb(46, 138, 141);
+ 
+ }
+
+
+ .col:nth-last-of-type(9) {
+
+    background-color: rgb(64, 15, 109);
+ 
+ }
+
+ .col:nth-last-of-type(10){
+
+    background-color: rgb(171, 157, 184);
+ 
+ }
+
+
+ .col:nth-last-of-type(11){
+
+    background-color: rgb(15, 16, 102);
+ 
+ }
+
+
+ .col:nth-last-of-type(12){
+
+    background-color: rgb(208, 226, 43);
+ 
+ }
+
