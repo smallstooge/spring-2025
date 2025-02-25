@@ -1,3 +1,7 @@
 h1,h2 {
   color: var(--primaryColor) !important;
 }
+
+.navbar{
+background-color: red !important;
+}
