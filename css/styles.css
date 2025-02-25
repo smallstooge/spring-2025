@@ -1,7 +1,7 @@
 @import 'global.css';
 @import 'main.css';
 
-body {
+p {
     font-family: var(--fontFamily) !important;
 }
 
@@ -13,4 +13,10 @@ body {
 .blinn-fa-container {
     background-color: #6a58f0;
     padding: 50px;
+}
+
+
+.paragraph-one{
+position: relative;
+float: right;
 }
