@@ -1,6 +1,8 @@
 body{
-
-
-    background-image: image-set(carousel-3
-    );
+background-image: url("images/carousel/carousel-4.png");
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+height: 100vh;
+margin: 0;
 }
