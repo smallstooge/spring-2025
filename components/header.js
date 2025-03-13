@@ -7,7 +7,6 @@ class Header extends HTMLElement {
 
     connectedCallback() {
 
-
         fetch("components/header.html")
         .then(response => {
           if (!response.ok) {
