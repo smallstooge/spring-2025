@@ -1,35 +1,25 @@
 class Header extends HTMLElement {
     constructor() {
-      super();
+        super();
     }
-  
-
 
     connectedCallback() {
-
-
         fetch('components/header.html')
         .then(response => {
-          if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-          }
-          return response.text(); // or response.json() if it's a JSON file
+            console.log('Fetch response:', response);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();
         })
         .then(data => {
-          console.log('Document content:', data);
-          // Further processing of the document content
-        
-          var globalData = data;
-          this.innerHTML = globalData;
-        
+            console.log('Fetched document content:', data);
+            this.innerHTML = data;
         })
         .catch(error => {
-          console.error('There was a problem fetching the document:', error);
+            console.error('Error fetching header:', error);
         });
-
-
-      
     }
-  }
-  
-  customElements.define('header-component', Header);
+}
+
+customElements.define('header-component', Header);
