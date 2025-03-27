@@ -9,5 +9,9 @@ background-color: white !important;
 
 .container-fluid-blinn-footer-container{
   background-image: url("images/carousel/carousel-5copy.jpg");
-  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  margin: 50px;
   }
