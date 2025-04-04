@@ -1,35 +1,25 @@
-class footer extends HTMLElement {
-    constructor() {
-      super();
-    }
-  
-  
-  
-    connectedCallback() {
-  
-  
-        fetch('/components/footer.html')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-          }
-          return response.text(); // or response.json() if it's a JSON file
-        })
-        .then(data => {
-          console.log('Document content:', data);
-          // Further processing of the document content
+class Footer extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  async connectedCallback() {
+    try {
+      const response = await fetch('/components/footer.html');
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.text();
+      this.innerHTML = data;
+    } catch (error) {
+      console.error('Error fetching the footer:', error);
+      this.innerHTML = `
         
-          var globalData = data;
-          this.innerHTML = globalData;
-        
-        })
-        .catch(error => {
-          console.error('There was a problem fetching the document:', error);
-        });
-  
-  
-      
+      `;
     }
   }
-  
-  customElements.define('footer-component', footer);
+}
+
+customElements.define('footer-component', Footer);
