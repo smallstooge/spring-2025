@@ -47,4 +47,5 @@ padding-left: 15px;
     margin-top: 15px;
     border: 10px solid var(--fontFamily) !important;
     border-radius: 50%;
+    clip-path: circle(50% at 50% 50%);
 }
