@@ -18,7 +18,7 @@ background-color: white !important;
   width: 250px;
   height: 250px;
   margin-top: 15px;
-  border: 10px solid var(--fontFamily) !important;
+  border: 10px solid var(--accentColor) !important;;
   border-radius: 50%;
   clip-path: circle(50% at 50% 50%);
 }
@@ -32,7 +32,7 @@ blockquote{
   padding: 0.35em 40px;
   line-height: 1.45;
   position: relative;
-  color:var(--fontFamily) !important ;
+  color: var(--accentColor) !important;;
 }
 
 blockquote::before{
@@ -42,12 +42,12 @@ font-size: 80px;
 position: absolute;
 left: -20px;
 top: -20px; 
-color:var(--fontFamily) !important ;
+color: var(--accentColor) !important;;
 content: "\201c";
 }
 
 blockquote cite{
-  color:var(--fontFamily) !important ;
+  color: var(--accentColor) !important; ;
 font-size: 14px;
 display: block;
 margin-top: 5px;
