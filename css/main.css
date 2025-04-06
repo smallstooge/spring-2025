@@ -35,7 +35,7 @@ blockquote{
   color:var(--fontFamily) !important ;
 }
 
-.blockquote::before{
+blockquote::before{
 display: block;
 padding-left: 10px;
 font-size: 80px;
@@ -44,4 +44,15 @@ left: -20px;
 top: -20px; 
 color:var(--fontFamily) !important ;
 content: "\201c";
+}
+
+blockquote cite{
+  color:var(--fontFamily) !important ;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+
+blockquote cite::before {
+  content:"\2014 \2009";
 }
