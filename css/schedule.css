@@ -5,7 +5,8 @@
 .wrapper-body{
 background-image: url("/images/carousel/background-image.jpg") ;
 background-repeat: no-repeat;
-background-attachment:cover ;
+background-attachment:fixed ;
+background-size:cover ;
 }
 
 .wraper-main{
