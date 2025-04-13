@@ -52,3 +52,7 @@ color: white;
 .content-table tbody tr{
     border-bottom: 1px solid #0d4647;
 }
+
+.content-table tbody tr{
+    background-color: #f3f3f3;
+}
