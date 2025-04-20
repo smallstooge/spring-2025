@@ -1,2 +1,11 @@
 @import 'global.css';
 @import 'main.css';
+
+
+.web-form{
+width: 75%;
+position: relative;
+margin: auto;
+background-color: aliceblue;
+padding: 30px;
+}
