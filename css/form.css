@@ -9,3 +9,35 @@ margin: auto;
 background-color: aliceblue;
 padding: 30px;
 }
+
+
+.web-form div{
+margin-top: 10px;
+
+
+}
+
+#age{
+    width: 120px;
+}
+
+#custom{
+margin-top: 5px;
+display: none;
+}
+
+.radio, .checkbox{
+    width: 20px !important;
+    height: 20px !important;
+} 
+
+.submit {
+    border-color: var(--secondaryColor) !important;
+    background-color: white;
+    color: var(--secondaryColor) !important;
+}
+
+.submit:hover{
+    background-color: white;
+    color: black;
+}
