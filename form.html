@@ -87,6 +87,51 @@
               <input type="color" name="color" id="color" />
             </div>
 
+            <!-- Backgroun Check - Upload file-->
+            <div>
+              <lable for="background-check">Background Check</lable>
+              <input type="file" id="background-check" accept=".pdf" />
+            </div>
+            <!-- Participating In - Radio Buttons -->
+            <div>
+              <strong>Participating In</strong><br />
+
+              <input type="radio" name="participation" id="fashion-show" value="Fashion Show" required />
+              <label for="fashion-show">Fashion Show</label>
+
+              <input type="radio" name="participation" id="donations" value="Donations" required />
+              <label for="donations">Donations</label>
+
+              <input type="radio" name="participation" id="expectator" value="Expectator" required />
+              <label for="expectator">Expectator</label>
+            </div>
+
+            <!-- Time of day - Checkbox Fields -->
+            <div>
+              <strong>Time of day</strong><br />
+
+              <input type="checkbox" name="timeOfDay" id="time-of-day-morning" value="Morning" required />
+              <label for="time-of-day-morning">Morning</label>
+
+              <input type="checkbox" name="timeOfDay" id="time-of-day-afternoon" value="Afternoon" required />
+              <label for="time-of-day-afternoon">Afternoon</label>
+
+              <input type="checkbox" name="timeOfDay" id="time-of-day-evening" value="Evening" required />
+              <label for="time-of-day-evening">Evening</label>
+            </div>
+            <!-- Comments -->
+            <div>
+              <label for="about-you">Tell us about you</label>
+              <textarea name="about-you" id="about-you"></textarea>
+            </div>
+
+            <!--Terms and Conditions - Checkbox with toggle switch-->
+
+            <div>
+              <input type="checkbox" name="terms" id="terms-and-conditions" value="Yes" />
+              <label for="terms-and-conditions">I Accept The Trems and Conditions</label>
+            </div>
+
             <!-- submit button-->
             <div>
               <input type="submit" name="submit" value="Volunteer Now" class="submit" />
