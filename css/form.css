@@ -26,6 +26,17 @@ margin-top: 5px;
 display: none;
 }
 
+#terms-and-conditons {
+    width: 40px !important ;
+    height: 20px !important;
+} 
+
+#about-you {
+width: 100px;
+height: 200px;
+
+}
+
 .radio, .checkbox{
     width: 20px !important;
     height: 20px !important;
