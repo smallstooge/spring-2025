@@ -20,55 +20,57 @@
       }
     </style>
   </head>
+
   <body>
-    <!-- begin header-->
+    <!-- Begin header -->
     <header-component></header-component>
-    <!-- end header-->
+    <!-- End header -->
 
     <main>
-      <!-- Begian Form -->
-      <div class="web-form">
+      <!-- Begin Form -->
+      <div class="web-form container">
         <form class="needs-validation" data-netlify="true" novalidate>
-          <div class="row">
-            <!--first name-->
-            <div class="col-12 col-xxs-12 col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="firstName" class="form-control" />
+          <div class="row g-3">
+            <!-- First Name -->
+            <div class="col-md-4">
+              <label for="first-name" class="form-label">First Name</label>
+              <input type="text" id="first-name" name="firstName" class="form-control" required />
             </div>
 
-            <!--Last Name-->
-            <div class="col-12 col-xxs-12 col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" name="lastName" class="form-control" />
-            </div>
-            <!--Age- number-->
-            <div class="col-12 col-xxs-12 col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="age">Age</label>
-              <input type="number" name="age" id="age" min="18" max="120" class="form-control" />
+            <!-- Last Name -->
+            <div class="col-md-4">
+              <label for="last-name" class="form-label">Last Name</label>
+              <input type="text" id="last-name" name="lastName" class="form-control" required />
             </div>
 
-            <!--Email-->
-            <div class="col-12 col-xxs-12 col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="email">Email</label>
-              <input type="email" name="email" class="form-control" />
+            <!-- Age -->
+            <div class="col-md-4">
+              <label for="age" class="form-label">Age</label>
+              <input type="number" name="age" id="age" min="18" max="120" class="form-control" required />
             </div>
 
-            <!--phone-->
-            <div class="col-12 col-xxs-12 col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="phone">Phone</label>
-              <input type="text" id="phone" name="phome" placeholder="(###) ###-####" class="form-control" />
+            <!-- Email -->
+            <div class="col-md-4">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-control" required />
             </div>
 
-            <!--Start Date - date-->
-            <div class="col-12 col-xxs-12 col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="start-date">Start Date</label>
-              <input type="date" id="start-date" name="stratDate" class="form-control" required />
+            <!-- Phone -->
+            <div class="col-md-4">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="text" id="phone" name="phone" placeholder="(###) ###-####" class="form-control" required />
             </div>
 
-            <!--Tshirt - Select field-->
-            <div class="col-12 col-xxs-12 col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <lable for="t-shirt">T-Shirt Size</lable>
-              <select id="t-shirt" required class="form-select">
+            <!-- Start Date -->
+            <div class="col-md-4">
+              <label for="start-date" class="form-label">Start Date</label>
+              <input type="date" id="start-date" name="startDate" class="form-control" required />
+            </div>
+
+            <!-- T-shirt Size -->
+            <div class="col-md-4">
+              <label for="t-shirt" class="form-label">T-Shirt Size</label>
+              <select id="t-shirt" name="tshirtSize" class="form-select" required>
                 <option value="">Select T-shirt size</option>
                 <option value="XXS">XXS</option>
                 <option value="XS">XS</option>
@@ -79,62 +81,70 @@
                 <option value="XXL">XXL</option>
                 <option value="CUSTOM">CUSTOM</option>
               </select>
-              <input type="text" id="custom" name="custom" placeholder="Please input a custom size" disabled class="form-control" />
-            </div>
-            <!-- Tshirt Color - Color-->
-            <div class="col-12 col-xxs-12 col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="Color">Tshirt Color</label>
-              <input type="color" name="color" id="color" class="form-control form-control-color" />
+              <input type="text" id="custom" name="customSize" placeholder="Please input a custom size" disabled class="form-control mt-2" />
             </div>
 
-            <!-- Backgroun Check - Upload file-->
-            <div class="col-12 col-xxs-12 col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <lable for="background-check">Background Check</lable>
-              <input type="file" id="background-check" accept=".pdf" class="form-control" />
+            <!-- T-shirt Color -->
+            <div class="col-md-4">
+              <label for="color" class="form-label">T-shirt Color</label>
+              <input type="color" id="color" name="color" class="form-control form-control-color" />
             </div>
-            <!-- Participating In - Radio Buttons -->
-            <div class="col-12 col-xxs-12 col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+
+            <!-- Background Check -->
+            <div class="col-md-4">
+              <label for="background-check" class="form-label">Background Check (PDF Only)</label>
+              <input type="file" id="background-check" name="backgroundCheck" accept=".pdf" class="form-control" />
+            </div>
+
+            <!-- Participating In -->
+            <div class="col-md-4">
               <strong>Participating In</strong><br />
-
-              <input type="radio" name="participation" id="fashion-show" value="Fashion Show" required class="form-check-input radio" />
-              <label for="fashion-show">Fashion Show</label>
-
-              <input type="radio" name="participation" id="donations" value="Donations" required class="form-check-input radio" />
-              <label for="donations">Donations</label>
-
-              <input type="radio" name="participation" id="expectator" value="Expectator" required class="form-check-input radio" />
-              <label for="expectator">Expectator</label>
+              <div class="form-check">
+                <input type="radio" id="fashion-show" name="participation" value="Fashion Show" class="form-check-input" required />
+                <label for="fashion-show" class="form-check-label">Fashion Show</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" id="donations" name="participation" value="Donations" class="form-check-input" required />
+                <label for="donations" class="form-check-label">Donations</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" id="spectator" name="participation" value="Spectator" class="form-check-input" required />
+                <label for="spectator" class="form-check-label">Spectator</label>
+              </div>
             </div>
 
-            <!-- Time of day - Checkbox Fields -->
-            <div class="col-12 col-xxs-12 col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <strong>Time of day</strong><br />
-
-              <input type="checkbox" name="timeOfDay" id="time-of-day-morning" value="Morning" required class="form-control checkbox timeOfDay" />
-              <label for="time-of-day-morning">Morning</label>
-
-              <input type="checkbox" name="timeOfDay" id="time-of-day-afternoon" value="Afternoon" required class="form-control checkbox timeOfDay" />
-              <label for="time-of-day-afternoon">Afternoon</label>
-
-              <input type="checkbox" name="timeOfDay" id="time-of-day-evening" value="Evening" required class="form-control checkbox timeOfDay" />
-              <label for="time-of-day-evening">Evening</label>
+            <!-- Time of Day -->
+            <div class="col-md-4">
+              <strong>Time of Day</strong><br />
+              <div class="form-check">
+                <input type="checkbox" id="time-of-day-morning" name="timeOfDay" value="Morning" class="form-check-input" />
+                <label for="time-of-day-morning" class="form-check-label">Morning</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="time-of-day-afternoon" name="timeOfDay" value="Afternoon" class="form-check-input" />
+                <label for="time-of-day-afternoon" class="form-check-label">Afternoon</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="time-of-day-evening" name="timeOfDay" value="Evening" class="form-check-input" />
+                <label for="time-of-day-evening" class="form-check-label">Evening</label>
+              </div>
             </div>
-            <!-- Comments -->
+
+            <!-- About You -->
             <div class="col-12">
-              <label for="about-you">Tell us about you</label><br />
-              <textarea name="about-you" id="about-you" class="form-control"></textarea>
+              <label for="about-you" class="form-label">Tell us about yourself</label>
+              <textarea name="aboutYou" id="about-you" class="form-control" rows="4"></textarea>
             </div>
 
-            <!--Terms and Conditions - Checkbox with toggle switch-->
-
+            <!-- Terms and Conditions -->
             <div class="col-12 form-check form-switch">
-              <input type="checkbox" name="terms" id="terms-and-conditions" value="Yes" class="form-check-input checkbox" />
-              <label for="terms-and-conditions">I Accept The Trems and Conditions</label>
+              <input type="checkbox" id="terms-and-conditions" name="terms" value="Yes" class="form-check-input" required />
+              <label for="terms-and-conditions" class="form-check-label">I Accept The Terms and Conditions</label>
             </div>
 
-            <!-- submit button-->
+            <!-- Submit Button -->
             <div class="col-12">
-              <input type="submit" id="submit" name="submit" value="Volunteer Now" class="submit btn btn-primary" />
+              <input type="submit" id="submit" name="submit" value="Volunteer Now" class="btn btn-primary mt-3" />
             </div>
           </div>
         </form>
@@ -142,68 +152,16 @@
       <!-- End Form -->
     </main>
 
-    <!-- End first Paragraph-->
-
-    <!-- Begin Headshot -->
-    <div class="container text-center Headshot">
-      <div class="row text-center">
+    <!-- Begin Headshot Section -->
+    <div class="container text-center Headshot mt-5">
+      <div class="row">
         <!-- Column 1 -->
-        <div class="col col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-          <img src="https://dummyimage.com/250x250/000/fff.jpg" class="img-fluid cropped" />
-          <br />
-          <blockquote>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestiae eum ab minima facilis tempore eos vitae incidunt sint harum. Inventore est corrupti eligendi beatae error fugit possimus consectetur molestias!
-            <cite>Lorem ipsum dolor sit amet.</cite>
-          </blockquote>
-        </div>
-
-        <!-- Column 2 -->
-        <div class="col col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-          <img src="https://dummyimage.com/250x250/000/fff.jpg" class="img-fluid cropped" />
-          <br />
-          <blockquote>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestiae eum ab minima facilis tempore eos vitae incidunt sint harum. Inventore est corrupti eligendi beatae error fugit possimus consectetur molestias!
-            <cite>Lorem ipsum dolor sit amet.</cite>
-          </blockquote>
-        </div>
-
-        <!-- Column 3 -->
-        <div class="col col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-          <img src="https://dummyimage.com/250x250/000/fff.jpg" class="img-fluid cropped" />
-          <br />
-          <blockquote>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestiae eum ab minima facilis tempore eos vitae incidunt sint harum. Inventore est corrupti eligendi beatae error fugit possimus consectetur molestias!
-            <cite>Lorem ipsum dolor sit amet.</cite>
-          </blockquote>
+        <div class="col-md-4">
+          <img src="https://dummyimage.com/250x250/000/fff.jpg" alt="Headshot" class="img-fluid rounded-circle" />
+          <blockquote class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestiae eum ab minima facilis tempore eos vitae incidunt sint harum. Inventore est corrupti eligendi beatae error fugit possimus consectetur molestias!</blockquote>
         </div>
       </div>
     </div>
-
-    <!-- End  Headshot -->
-
-    <footer>
-      <!--begin footer-->
-      <footer-component></footer-component>
-
-      <!--end footer-->
-    </footer>
-
-    <section>
-      <!-- Bootstrap JS -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-      <!-- Local JavaScript -->
-      <script src="js/script.js"></script>
-
-      <!-- Local JS File with header-->
-      <script src="components/js/header.js" defer></script>
-
-      <!-- Local JS File with footer-->
-      <script src="components/js/footer.js"></script>
-
-      <!--local js file for form-->
-      <script src="/js/form.js"></script>
-    </section>
+    <!-- End Headshot Section -->
   </body>
 </html>
-<!--test-->
