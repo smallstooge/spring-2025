@@ -1,78 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
-
-/* Color Variables */
-:root {
-  --primaryColor: #6a58f0;
-  --secondaryColor: #0d4647;
-  --accentColor: #c3004c;
-  --fontFamily: "Quintessential", serif;
+h1,h2 {
+  color: var(--primaryColor) !important;
 }
 
-/* Global Styles */
-body {
-  font-family: var(--fontFamily);
-  margin: 0;
-  padding: 0;
+.navbar{
+background-color: white !important;
 }
 
-/* Headings */
-h1, h2 {
-  color: var(--primaryColor);
+
+.container-fluid-papa{
+
+  background-color:purple
+   ;
 }
 
-/* Navbar */
-.navbar {
-  background-color: white;
-}
 
-/* Container Section */
-.container-fluid-papa {
-  background-color: purple;
-  color: white;
-  padding: 2rem;
-  text-align: center;
-}
-
-/* Profile Image */
-.cropped {
+.cropped{
   width: 250px;
   height: 250px;
   margin-top: 15px;
-  border: 10px solid var(--accentColor);
+  border: 10px solid var(--accentColor) !important;;
   border-radius: 50%;
   clip-path: circle(50% at 50% 50%);
 }
 
-/* Blockquote Styling */
-blockquote {
+
+blockquote{
   font-family: Georgia, serif;
   font-size: 18px;
   font-style: italic;
-  margin: 0.25em 0;
+  margin: 0.25em 0px;
   padding: 0.35em 40px;
   line-height: 1.45;
   position: relative;
-  color: var(--accentColor);
+  color: var(--accentColor) !important;;
 }
 
-blockquote::before {
-  display: block;
-  padding-left: 10px;
-  font-size: 80px;
-  position: absolute;
-  left: -20px;
-  top: -20px;
-  color: var(--accentColor);
-  content: "\201c";
+blockquote::before{
+display: block;
+padding-left: 10px;
+font-size: 80px;
+position: absolute;
+left: -20px;
+top: -20px; 
+color: var(--accentColor) !important;;
+content: "\201c";
 }
 
-blockquote cite {
-  color: var(--accentColor);
-  font-size: 14px;
-  display: block;
-  margin-top: 5px;
+blockquote cite{
+  color: var(--accentColor) !important; ;
+font-size: 14px;
+display: block;
+margin-top: 5px;
 }
 
 blockquote cite::before {
-  content: "\2014 \2009";
+  content:"\2014 \2009";
 }
